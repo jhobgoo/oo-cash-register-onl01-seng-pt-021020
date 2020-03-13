@@ -32,15 +32,12 @@ class CashRegister
     if @discount > 0
       @discounted_amount = (price * discount)/100
       @total -= @discounted_amount
-      
+      puts "After the discount, the total comes to #{@total}."
     else
-      
-    #check to see if there is a discount
-    #if false, return "There is no discount to apply."
-    #if true, and the discount is a standard_discount, multiply standard_discount percentage by @total
-    #else if true, there is an employee_discount, multiply employee_discount percentage by @total
+      puts "There is no discount to apply."
+    end
   end
-  
+      
   def items
     @items
   end
