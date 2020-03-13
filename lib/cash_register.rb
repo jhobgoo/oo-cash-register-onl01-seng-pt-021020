@@ -29,7 +29,8 @@ class CashRegister
   end
   
   def apply_discount(discount)
-    
+    if @discount > 0
+      
     #check to see if there is a discount
     #if false, return "There is no discount to apply."
     #if true, and the discount is a standard_discount, multiply standard_discount percentage by @total
