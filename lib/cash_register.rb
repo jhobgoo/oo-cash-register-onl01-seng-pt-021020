@@ -25,7 +25,6 @@ class CashRegister
       end
     else
       @items << goods_purchased
-      @last_transaction << price
     end
   end
   
