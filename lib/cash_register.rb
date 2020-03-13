@@ -43,7 +43,7 @@ class CashRegister
   end
   
   def void_last_transaction
-    #return @total minus the total amount of the added price values of the @items array
+    @item
   end
   
 end
