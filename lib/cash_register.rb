@@ -19,7 +19,9 @@ class CashRegister
     if quantity >= 0
       counter = 0
       while counter < quantity
-      @items << item
+        @items << item
+        counter += 1
+      
   end
   
   def apply_discount
