@@ -19,9 +19,6 @@ class CashRegister
     @total += price * quantity
     quantity.times do
       @items << goods_purchased
-
-    else
-      @items << goods_purchased
     end
   end
   
