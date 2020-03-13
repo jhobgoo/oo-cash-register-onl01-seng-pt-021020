@@ -25,8 +25,8 @@ class CashRegister
       end
     else
       @items << goods_purchased
+      @last_transaction << price
     end
-    @last_transcation = @items.last
   end
   
   def apply_discount
