@@ -10,7 +10,34 @@ class CashRegister
     @items = []
   end
   
-  def
+     @items = []  
+  end
+  
+  binding.pry
+  
+  def total
+    @total
+  end
+  
+  def add_item(title, price = 0)
+    @total + price
+    #when an item is added, shovel the title and price into the @items array 
+  end
+  
+  def apply_discount
+    #check to see if there is a discount
+    #if false, return "There is no discount to apply."
+    #if true, and the discount is a standard_discount, multiply standard_discount percentage by @total
+    #else if true, there is an employee_discount, multiply employee_discount percentage by @total
+  end
+  
+  def items
+    @items
+  end
+  
+  def void_last_transaction
+    #return @total minus the total amount of the added price values of the @items array
+  end
   
 end
 
