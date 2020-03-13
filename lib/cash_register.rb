@@ -39,7 +39,7 @@ class CashRegister
   end
       
   def items
-    @items.pop
+    @items.splice(-1)\\
   end
   
   def void_last_transaction
