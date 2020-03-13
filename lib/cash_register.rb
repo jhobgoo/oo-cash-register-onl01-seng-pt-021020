@@ -16,7 +16,6 @@ class CashRegister
   
   def add_item(title, price, quantity = 1)
     @total + price
-    #when an item is added, shovel the title and price into the @items array 
   end
   
   def apply_discount
