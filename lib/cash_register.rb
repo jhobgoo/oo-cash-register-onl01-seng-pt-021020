@@ -45,11 +45,7 @@ class CashRegister
   
   def void_last_transaction
     binding.pry
-    if 
     @total -= @price
-    if @items.clear
-      
-    end
   end
   
 end
