@@ -30,7 +30,11 @@ class CashRegister
   
   def apply_discount(discount)
     if @discount > 0
-      @discounted_amount 
+      @discounted_amount = (price * discount)/100
+      @total -= @discounted_amount
+      
+    else
+      
     #check to see if there is a discount
     #if false, return "There is no discount to apply."
     #if true, and the discount is a standard_discount, multiply standard_discount percentage by @total
